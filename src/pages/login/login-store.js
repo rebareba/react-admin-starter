@@ -1,7 +1,7 @@
 /*
  * @Author: changfeng
  * @LastEditors: changfeng
- * @LastEditTime: 2021-05-11 09:15:28
+ * @LastEditTime: 2021-05-11 15:01:18
  * @Description:
  */
 import {createIo} from '@common/create-io'
@@ -19,6 +19,8 @@ const io = createIo(apis, 'login')
 
 class LoginStore {
   loading = false
+
+  userInfo
 
   message = ''
 

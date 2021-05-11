@@ -13,11 +13,9 @@ import './home.styl'
 
 const Home = ({globalStore}) => {
   useEffect(() => {
-    globalStore.loginInfo()
-    console.log('useEffect')
+    globalStore.setBreadcrumb([{name: '主页'}])
   }, [])
-  const {userInfo, nickname} = globalStore
-  console.log('userInfo', userInfo, globalStore)
+  const {userInfo} = globalStore
   return (
     <div className="fbh h100">
       {/* <div className="frame-logo p10">

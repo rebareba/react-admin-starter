@@ -10,23 +10,35 @@ import '@common/common.styl'
 import '@common/colors.styl'
 import '@icons'
 
-import {config, history} from '@utils'
+import {config, history, getPageRoutes} from '@utils'
 
 import GlobalStore from '@common/global-store'
 
-import Home from '@src/pages/home'
 import Login from '@pages/login'
+import Frame from '@src/frame'
+import menuData from '@src/frame/menu-data'
 
-const stores = {globalStore: new GlobalStore()}
+const globalStore = new GlobalStore()
+
+console.log('globalStore', globalStore)
+const stores = {globalStore}
 
 const App = () => {
+  const {pathPrefix} = config
   return (
     <Suspense fallback="加载中">
       <Router history={history}>
         <Switch>
-          <Route path={`${config.pathPrefix}/login`} component={Login} />
-          <Route path={`${config.pathPrefix}`} component={Home} />
-          <Redirect from="/" to={`${config.pathPrefix}`} />
+          <Route path={`${pathPrefix}/login`} component={Login} />
+          <Frame>
+            <Switch>
+              {getPageRoutes(menuData).map((route) => {
+                return <Route path={route.url} component={route.component} key={route.url} />
+              })}
+              <Redirect from="/" to={`${pathPrefix}/home`} />
+              <Redirect from={pathPrefix} to={`${pathPrefix}/home`} />
+            </Switch>
+          </Frame>
         </Switch>
       </Router>
     </Suspense>

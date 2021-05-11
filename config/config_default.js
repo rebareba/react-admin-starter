@@ -31,26 +31,33 @@ module.exports = {
   // 前端代码配置 动态生成config/conf.json中的数据， 也是index.html模板的数据
   conf: {
     dev: {
-      title: "React Starter",
-      pathPrefix: "/",
+      title: "管理后台模板 React Admin Starter",
+      name: "管理后台",
+      pathPrefix: "/admin",
       apiPrefix: "/api",
       debug: true,
       mock: {
-        "auth.loginInfo": "success", // success | false
-        "login.login": "failed",
-        // "auth.logout": "success",
+        "global.login": "success",
+        "global.loginInfo": "success",
+        "login.login": "success",
+        "global.logout": "success",
       },
       // 指定public资源的域名 是否是cdn的资源
       publicHost:''
     },
     build: {
-      title: "React Starter",
-      pathPrefix: "/",
+      title: "管理后台模板 React Admin Starter",
+      name: "管理后台",
+      pathPrefix: "/admin",
       apiPrefix: "/api",
       debug: false,
       // mock数据模拟延迟
       delay: 100,
-      mock: {},
+      mock: {
+        "global.login": "success",
+        "global.loginInfo": "success",
+        "global.logout": "success",
+      },
       // 指定public资源的域名 是否是cdn的资源
       publicHost:''
     }

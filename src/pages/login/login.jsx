@@ -9,6 +9,7 @@ const Login = observer(function Login() {
   // const [loginStore] = useState(new LoginStore())
   const {loading, message, mobile, password} = loginStore
 
+  console.log('loginStore', loginStore)
   const handleSubmit = async (evt) => {
     evt.preventDefault()
     await loginStore.login()

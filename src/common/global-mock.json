@@ -12,7 +12,9 @@
 			"content": {
 				"name": "admin",
 				"nickname": "超级管理员",
-				"permission": 15
+				"permissions": {
+					"user": 15
+				}
 			},
 			"message": ""
 		},
@@ -30,18 +32,16 @@
 			"content": {
 				"name": "admin",
 				"nickname": "超级管理员",
-				"permission": 15
+				"permissions": {
+					"user": 15
+				}
 			},
 			"message": ""
 		},
 		"failed": {
 			"success": false,
 			"code": 0,
-			"content": {
-				"name": "admin",
-				"nickname": "超级管理员",
-				"permission": 15
-			},
+			"content": null,
 			"message": ""
 		}
 	}

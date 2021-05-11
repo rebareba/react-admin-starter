@@ -1,4 +1,6 @@
 import {runInAction, makeAutoObservable} from 'mobx'
+import menuData from '@src/frame/menu-data'
+import {getSiderMenu} from '@utils'
 import {createIo} from './create-io'
 
 // 用户登录相关接口配置
@@ -22,20 +24,43 @@ export class GlobalStore {
   // 用户信息
   userInfo
 
-  nickname
+  // 菜单栏
+  collapsed = false
+
+  breadcrumb = []
+
+  menu = []
 
   constructor() {
+    // makeObservable(this, {
+    //   mobile: observable,
+    //   message: observable,
+    //   loading: observable,
+    //   password: observable,
+    //   login: action,
+    //   setMobile: action,
+    //   setPassword: action,
+    // })
     makeAutoObservable(this)
   }
-  // 获取当前的登录信息
+
+  get userMenu() {
+    if (this.userInfo) {
+      return getSiderMenu(menuData, this.userInfo.permissions)
+    }
+    return []
+  }
+
+  setBreadcrumb(breadcrumb = []) {
+    this.breadcrumb = breadcrumb
+  }
 
   async loginInfo() {
-    if (this.userInfo) return
+    // if (this.userInfo) return
     const {success, content} = await io.loginInfo()
     if (!success) return
     runInAction(() => {
       this.userInfo = content
-      this.nickname = content.nickname
     })
   }
 
@@ -46,6 +71,11 @@ export class GlobalStore {
     runInAction(() => {
       this.userInfo = content
     })
+  }
+
+  // 菜单栏的触发设置
+  toggleCollapsed = () => {
+    this.collapsed = !this.collapsed
   }
 }
 export default GlobalStore
