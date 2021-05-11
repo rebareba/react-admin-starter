@@ -1,18 +1,22 @@
 import React from 'react'
-import {observer} from 'mobx-react-lite'
+import {observer, inject} from 'mobx-react'
 import './login.styl'
 
 import bg from '@assets/image/bg.jpg'
 import loginStore from './login-store'
 
-const Login = observer(function Login() {
+const Login = function Login({globalStore}) {
   // const [loginStore] = useState(new LoginStore())
   const {loading, message, mobile, password} = loginStore
 
-  console.log('loginStore', loginStore)
   const handleSubmit = async (evt) => {
     evt.preventDefault()
-    await loginStore.login()
+    if (loginStore.checkLogin()) {
+      loginStore.setLoading(true)
+      const {message, success} = await globalStore.login(mobile, password)
+      loginStore.setLoading(false)
+      if (!success) loginStore.setMessage(message)
+    }
   }
   return (
     <div className="loginMain" style={{backgroundImage: `url(${bg})`}}>
@@ -41,6 +45,6 @@ const Login = observer(function Login() {
       </div>
     </div>
   )
-})
+}
 
-export default Login
+export default inject('globalStore')(observer(Login))

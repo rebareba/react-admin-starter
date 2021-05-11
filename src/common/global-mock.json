@@ -17,12 +17,6 @@
 				}
 			},
 			"message": ""
-		},
-		"false": {
-			"success": false,
-			"code": "ERROR_PASS_ERROR",
-			"content": null,
-			"message": "账号或密码错误!"
 		}
 	},
 	"loginInfo": {
@@ -40,9 +34,9 @@
 		},
 		"failed": {
 			"success": false,
-			"code": 0,
+			"code": "NEED_LOGIN",
 			"content": null,
-			"message": ""
+			"message": "用户未登录，重新登录"
 		}
 	}
 }

@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "experimentalDecorators": true,
+    "jsx": "preserve",
     "paths": {
       "@/*": ["."],
       "@src/*": ["src/*"],
@@ -19,5 +20,5 @@
     "node_modules",
     "dist",
     "public"
-  ]
+  ],
 }

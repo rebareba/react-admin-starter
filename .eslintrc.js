@@ -96,5 +96,6 @@ module.exports = {
     'react/no-array-index-key': 0, // 不能使用index作为key
     'import/no-cycle': 0,
     'react/react-in-jsx-scope': 0,
+    'no-shadow': 1,
   },
 }

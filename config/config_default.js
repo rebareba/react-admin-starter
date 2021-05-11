@@ -37,8 +37,8 @@ module.exports = {
       apiPrefix: "/api",
       debug: true,
       mock: {
-        "global.login": "success",
-        "global.loginInfo": "success",
+        "global.login": "success", // failed success
+        "global.loginInfo": "failed", // success failed
         "login.login": "success",
         "global.logout": "success",
       },

@@ -1,11 +1,11 @@
 /*
  * @Author: changfeng
  * @LastEditors: changfeng
- * @LastEditTime: 2021-05-11 15:01:18
+ * @LastEditTime: 2021-05-11 17:22:05
  * @Description:
  */
 import {createIo} from '@common/create-io'
-import {action, autorun, makeObservable, makeAutoObservable, observable} from 'mobx'
+import {makeAutoObservable} from 'mobx'
 import {check, log} from '@utils'
 
 const apis = {
@@ -62,8 +62,30 @@ class LoginStore {
     return ''
   }
 
+  checkLogin() {
+    log(this.mobile, this.password, this.message)
+    if (this.loading) return false
+    if (!check('mobile', this.mobile)) {
+      this.message = '手机号码格式不正确'
+      return false
+    }
+    if (!this.password) {
+      this.message = '请填写密码'
+      return false
+    }
+    return true
+  }
+
+  setLoading(loading) {
+    this.loading = loading
+  }
+
   setPassword(value) {
     this.password = value
+  }
+
+  setMessage(value) {
+    this.message = value
   }
 
   setMobile(value) {

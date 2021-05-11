@@ -1,6 +1,6 @@
 import {runInAction, makeAutoObservable} from 'mobx'
 import menuData from '@src/frame/menu-data'
-import {getSiderMenu} from '@utils'
+import {getSiderMenu, history, config} from '@utils'
 import {createIo} from './create-io'
 
 // 用户登录相关接口配置
@@ -56,7 +56,7 @@ export class GlobalStore {
   }
 
   async loginInfo() {
-    // if (this.userInfo) return
+    if (this.userInfo) return
     const {success, content} = await io.loginInfo()
     if (!success) return
     runInAction(() => {
@@ -65,12 +65,24 @@ export class GlobalStore {
   }
 
   // 获取当前的登录信息
-  async login(params) {
-    const {success, content} = await io.login(params)
-    if (!success) return
-    runInAction(() => {
-      this.userInfo = content
+  async login(mobile, password) {
+    const {success, content, message} = await io.login({
+      mobile,
+      password,
     })
+    if (success) {
+      runInAction(() => {
+        this.userInfo = content
+      })
+      const querys = new URLSearchParams(history.location.search)
+      const redirect = querys.get('redirect')
+      if (redirect) {
+        history.push(redirect)
+      } else {
+        history.push(`${config.pathPrefix}/home`)
+      }
+    }
+    return {success, message}
   }
 
   // 菜单栏的触发设置
