@@ -7,15 +7,15 @@ import {createIo} from './create-io'
 const apis = {
   login: {
     method: 'POST',
-    url: '/login',
+    url: 'login',
   },
   logout: {
     method: 'POST',
-    url: '/auth/logout',
+    url: 'auth/logout',
   },
   loginInfo: {
     method: 'GET',
-    url: '/login_info',
+    url: 'login_info',
   },
 }
 const io = createIo(apis, 'global')
@@ -70,6 +70,12 @@ export class GlobalStore {
       mobile,
       password,
     })
+    // 高级调用方式
+    // const {success, content} = await io.login({
+    //   [rejectToData]: true,
+    //   data: login,
+    //   params: {user: 1, ':userId': 2},
+    // })
     if (success) {
       runInAction(() => {
         this.userInfo = content

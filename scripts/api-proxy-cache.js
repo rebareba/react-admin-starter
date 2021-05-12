@@ -1,10 +1,9 @@
 /*
  * @Author: changfeng
  * @LastEditors: changfeng
- * @LastEditTime: 2021-05-11 09:14:37
+ * @LastEditTime: 2021-05-12 14:26:14
  * @Description: webpack proxy 模块的接口代理的 前处理 onProxyReq 后处理 onProxyRes 来处理接口缓存操作
  */
-const colors = require('colors');
 const fs = require('fs')
 const path = require('path')
 const prettier = require('prettier')
@@ -37,9 +36,7 @@ module.exports = {
         res.mock = true
         res.append('isMock','yes')
         res.send(mockJson[mockKey][mockMethod][conf.mock[`${mockKey}.${mockMethod}`]])
-        console.log(_.destroy())
-        // console.log(_.socket)
-        // console.log(_.connection)
+        _.destroy()
       }
      
     }

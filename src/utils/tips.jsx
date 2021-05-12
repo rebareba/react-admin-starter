@@ -1,11 +1,11 @@
-import {Modal} from 'antd'
+import {message} from 'antd'
 
 export default (title, content, type = 'error') => {
   if (!content) {
     content = title
     title = ''
   }
-  Modal[type]({
+  message[type]({
     title,
     content,
   })

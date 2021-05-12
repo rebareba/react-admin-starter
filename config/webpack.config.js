@@ -2,6 +2,7 @@
 const webpack = require('webpack')
 const path = require('path')
 const fs = require('fs')
+const colors = require('colors');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -13,11 +14,13 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 // 热更新
 const ReactRefreshWebpackPlugin= require('@pmmmwh/react-refresh-webpack-plugin');
+const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const {init, getConf} = require('../scripts/webpack-init');
+const {getIPAdress} = require('../scripts/util');
+
 
 // 配置文件
 const config = require('.')
-
 
 /* 解析路径 上一级目录 */
 const resolve = dir => {
@@ -75,7 +78,9 @@ const webpackConf = {
       // 指明哪些路径映射到哪个html
       rewrites: config.rewrites,
     },
-    host: '127.0.0.1',
+    host: '0.0.0.0',
+    open: true,
+    openPage: `http://127.0.0.1:${config.port}`,
     hot: true,
     proxy: config.proxy,
   },
@@ -97,7 +102,11 @@ const webpackConf = {
   },
   // 性能设置 https://webpack.docschina.org/configuration/performance/
   performance: {
-    hints: 'warning',
+    hints: isDev? false: 'warning',
+    // 针对指定的入口最大体积
+    maxEntrypointSize: 400000,
+    // webpack 生成的任何文件
+    maxAssetSize: 100000,
   },
   stats: {
     preset: 'errors-warnings',
@@ -297,6 +306,20 @@ const webpackConf = {
     // 自动加载
     isDev && new webpack.HotModuleReplacementPlugin(),
     isDev && new ReactRefreshWebpackPlugin(),
+    isDev && new FriendlyErrorsPlugin({
+      compilationSuccessInfo: {
+        messages: [
+          `http://${getIPAdress()}:${config.port} 或 http://127.0.0.1:${config.port}`.green,
+        ],
+      },
+      onErrors: (severity, errors) => {
+        if (severity !== 'error') {
+          console.log(`访问：http://${getIPAdress()}:${config.port} 或 http://127.0.0.1:${config.port} 打开`.green)
+          return
+        }
+      },
+      clearConsole: true,
+    }),
     new ESLintPlugin({
       extensions: ['js', 'jsx', 'ts', 'tsx'],
     }),

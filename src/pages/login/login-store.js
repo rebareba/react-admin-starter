@@ -1,7 +1,7 @@
 /*
  * @Author: changfeng
  * @LastEditors: changfeng
- * @LastEditTime: 2021-05-11 17:22:05
+ * @LastEditTime: 2021-05-12 21:48:58
  * @Description:
  */
 import {createIo} from '@common/create-io'
@@ -11,7 +11,7 @@ import {check, log} from '@utils'
 const apis = {
   login: {
     method: 'POST',
-    url: '/login',
+    url: 'login',
   },
 }
 
