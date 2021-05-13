@@ -73,15 +73,11 @@ export const createIo = (ioContent, name = '') => {
         // 这个mock数据要深拷贝下 _.cloneDeep(value)
         ioContent[key].mock = JSON.parse(JSON.stringify(mockData[name][key][config.mock[`${name}.${key}`]]))
       } else if (name && config.debug === true) {
-        if (options.headers) {
-          options.headers[''] = name
-          options.headers['mock-method'] = key
-        } else {
-          options.headers = {'mock-key': name, 'mock-method': key}
-        }
+        const mockHeader = {'mock-key': name, 'mock-method': key}
+        options.headers = options.headers ? {...options.headers, ...mockHeader} : mockHeader
       }
       const option = {...ioContent[key], ...options}
-
+      // url / 开头使用绝对路径不是拼接统一前缀
       if (option.url[0] !== '/') {
         option.url = `${config.apiPrefix}/${option.url}`
       }

@@ -51,7 +51,17 @@ export default function createRequest(option = {}) {
   if (option.responseInterceptor) {
     instance.interceptors.response.use(option.responseInterceptor)
   }
-
+  /**
+   * 参数axios基本一致，除了这两还有其他axios的参数都支持
+   * @typedef   {Object} Options  字段参数
+   * @property  {String} url 请求地址
+   * @property  {String} method 字段名
+   * @property  {Object} headers 请求头
+   * @property  {Object} params query参数和router参数的处理 {code: 'query上', ':userId': ‘router参数’}
+   * @property  {Object} data body数据
+   * @property  {Function} endAction 混合处理get header是params ,其他是data
+   * @property  {Boolen} showErrorTip 是否判断提示
+   */
   return async (options) => {
     const endAction = options.endAction || option.endAction
     const showErrorTip = typeof options.showErrorTip !== 'undefined' ? options.showErrorTip : option.showErrorTip
