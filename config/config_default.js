@@ -8,7 +8,7 @@ module.exports = {
   cdnPrefix: `//cdn.dtwave.com/${pkg.name}/${pkg.version}/`,
   // npm run build 打包的 publicPath 路径
   versionPrefix: `/${pkg.name}/${pkg.version}/`,
-  port: 8890,
+  port: 8880,
   // 接口匹配转发 devServer.proxy
   proxy: {
     "/api/*": {

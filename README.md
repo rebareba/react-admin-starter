@@ -7,6 +7,7 @@ Github: https://github.com/rebareba/react-admin-starter
 
 ### 目录结构
 
+
 ```
 ├── .eslintignore                     --- eslint忽略配置
 ├── .eslintrc.js                      --- eslint相关配置	
@@ -16,20 +17,20 @@ Github: https://github.com/rebareba/react-admin-starter
 ├── .vscode                           --- 编辑器配置
 ├── jsconfig.json                     --- 编辑器js环境配置
 ├── mock.json                         --- 动态生成mock文件 gitignore
-├── api-cache													--- 后端接口请求缓存 gitignore
+├── api-cache                         --- 后端接口请求缓存 gitignore
 ├── config                            --- webpack 和 前端 配置文件目录
 │   ├── conf.json                     --- 前端配置 动态生成  git不跟踪
 │   ├── config.js                     --- 开发自定义配置替换default, git不跟踪
 │   ├── config_default.js             --- 默认的开发配置
 │   └── index.js
-│   └── webpack.config.js							--- webpack配置
+│   └── webpack.config.js             --- webpack配置
 ├── dist                              --- 打包出来的文件夹目录
 │   ├── public
 │   ├── react-starter
 │   │   ├── 1.0.0
 │   │   └── index.html
 │   ├── react-starter_1.0.0_public.tgz
-├── public														--- 公共资源目录
+├── public                            --- 公共资源目录
 │   ├── antd
 │   └── react
 ├── scripts                           --- 无需关心的一些脚本
@@ -42,34 +43,34 @@ Github: https://github.com/rebareba/react-admin-starter
     ├── assets                       --- 静态资源
     │   ├── image
     │   └── svg
-    ├── common										--- 公共代码层
-    │   ├── colors.styl							 --- 全局样式
+    ├── common                     --- 公共代码层
+    │   ├── colors.styl              --- 全局样式
     │   ├── common.styl
     │   ├── flexbox.styl	            
     │   ├── constant.js	             --- 常量定义
     │   ├── create-io.js	           --- 请求实例创建和mock处理
-    │   ├── global-mock.json				 --- 全局请求缓存
-    │   └── global-store.js					 --- 全局store处理
+    │   ├── global-mock.json         --- 全局请求缓存
+    │   └── global-store.js          --- 全局store处理
     ├── components                   --- 公共组件层
     │   └── icon
-    ├── icons												 --- svg-sprite-loader的icon
-    ├── index.html									 --- html-webpack-plugin 模板
-    ├── index.jsx										 ---入口文件
+    ├── icons                        --- svg-sprite-loader的icon
+    ├── index.html                   --- html-webpack-plugin 模板
+    ├── index.jsx                    ---入口文件
     ├── pages
-    │   ├── home										 --- 页面
-    │   └── login										 --- 登录页
+    │   ├── home                     --- 页面
+    │   └── login                    --- 登录页
     │       ├── index.jsx
-    │       ├── login-mock.json			 --- 登陆页的接口mock数据
-    │       ├── login-store.js			 --- 登录页的store
+    │       ├── login-mock.json      --- 登陆页的接口mock数据
+    │       ├── login-store.js       --- 登录页的store
     │       ├── login.jsx
     │       └── login.styl
-    └── utils												 --- 工具方法一个文件一个方法			
-        ├── index.jsx								 --- 入口 @utils引入
-        ├── config.js								 --- 全局前端配置 引用config/conf.json
-        ├── create-request.js				 --- axios的封装 			 
-        ├── history.js							 --- react-router 的history
-        ├── log.js									 --- log处理 可以替换console.log
-        └── tips.jsx								 --- 提示message工具已经antd.message
+    └── utils                      --- 工具方法一个文件一个方法			
+        ├── index.jsx                --- 入口 @utils引入
+        ├── config.js                --- 全局前端配置 引用config/conf.json
+        ├── create-request.js        --- axios的封装 			 
+        ├── history.js               --- react-router 的history
+        ├── log.js                   --- log处理 可以替换console.log
+        └── tips.jsx                 --- 提示message工具已经antd.message
 ```
 ### 常用命令
 
