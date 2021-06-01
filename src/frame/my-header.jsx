@@ -37,7 +37,9 @@ const MyHeader = ({globalStore}) => {
         <div className="fs26 fw500" style={{minWidth: 120}}>
           {config.name}
         </div>
-        <div onClick={toggleCollapsed}>{React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined)}</div>
+        <div onClick={toggleCollapsed} className="fbh fbac">
+          {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {className: 'fs20'})}
+        </div>
         {renderBreadcrumb(breadcrumb)}
       </div>
       {/* <Menu mode="horizontal" defaultSelectedKeys={['2']}>

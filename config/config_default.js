@@ -38,7 +38,7 @@ module.exports = {
       debug: true,
       mock: {
         "global.login": "success", // failed success
-        "global.loginInfo": "failed", // success failed
+        "global.loginInfo": "success", // success failed
         "login.login": "success",
         "global.logout": "success",
       },

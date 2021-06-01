@@ -97,5 +97,9 @@ module.exports = {
     'import/no-cycle': 0,
     'react/react-in-jsx-scope': 0,
     'no-shadow': 1,
+    // 'no-shadow': 0,
+    'consistent-return': 0,
+    'no-empty': 0,
+    'jsx-a11y/control-has-associated-label': 0,
   },
 }

@@ -24,8 +24,11 @@ import Echarts from '@pages/chart/echarts'
 import D3s from '@pages/chart/d3s'
 
 // useful
-
 import UserList from '@pages/useful/user-list'
+// list
+
+import DataSimple from '@pages/useful/data/simple'
+import DataTree from '@pages/useful/data/tree'
 
 const {pathPrefix} = config
 
@@ -48,6 +51,105 @@ export default [
     icon: <HomeOutlined />,
     component: Home,
     isMenu: true,
+  },
+  {
+    name: '常用实现',
+    url: '/useful',
+    icon: <StarOutlined />,
+    children: [
+      {
+        name: '信息系统',
+        url: `${pathPrefix}/useful/system`,
+        children: [
+          {
+            name: '列表页面',
+            url: `${pathPrefix}/useful/system/list`,
+            component: Echarts,
+            isMenu: true,
+          },
+          {
+            name: '添加页面',
+            url: `${pathPrefix}/useful/system/add`,
+            component: Echarts,
+          },
+          {
+            name: '详情',
+            url: `${pathPrefix}/useful/system/:serviceCode/info`,
+            component: Echarts,
+          },
+          {
+            name: '测试',
+            url: `${pathPrefix}/useful/system/:serviceCode/test`,
+            component: Echarts,
+          },
+          {
+            name: '文档中心',
+            url: `${pathPrefix}/useful/system/doc`,
+            component: D3s,
+            isMenu: true,
+          },
+          {
+            name: '文档预览',
+            url: `${pathPrefix}/useful/system/doc/:serviceCode`,
+            component: UserList,
+          },
+        ],
+      },
+      {
+        name: '查询列表',
+        url: `${pathPrefix}/useful/list`,
+        children: [
+          {
+            name: '简单列表',
+            url: `${pathPrefix}/useful/list/data_simple`,
+            component: DataSimple,
+            isMenu: true,
+          },
+          {
+            name: '侧边拖拽树列表',
+            url: `${pathPrefix}/useful/list/data_tree`,
+            component: DataTree,
+            isMenu: true,
+          },
+        ],
+      },
+      {
+        name: '复杂查询条件',
+        url: `${pathPrefix}/useful/data_tree_query`,
+        component: UserList,
+        isMenu: true,
+      },
+      {
+        name: '复杂查询条件',
+        url: `${pathPrefix}/useful/data_query`,
+        component: UserList,
+        isMenu: true,
+      },
+      {
+        name: '复杂信息列表',
+        url: `${pathPrefix}/useful/data_list`,
+        component: UserList,
+        isMenu: true,
+      },
+      {
+        name: '下来加载更多',
+        url: `${pathPrefix}/useful/data_load`,
+        component: UserList,
+        isMenu: true,
+      },
+      {
+        name: '拖拽实现',
+        url: `${pathPrefix}/useful/drag`,
+        component: UserList,
+        isMenu: true,
+      },
+      {
+        name: '信息监控页面',
+        url: `${pathPrefix}/useful/monitor`,
+        component: UserList,
+        isMenu: true,
+      },
+    ],
   },
   {
     name: 'UI',
@@ -104,19 +206,6 @@ export default [
         name: 'D3s',
         url: `${pathPrefix}/chart/d3s`,
         component: D3s,
-        isMenu: true,
-      },
-    ],
-  },
-  {
-    name: '常见页面实现',
-    url: '/useful',
-    icon: <StarOutlined />,
-    children: [
-      {
-        name: '用户管理',
-        url: `${pathPrefix}/useful/user_list`,
-        component: UserList,
         isMenu: true,
       },
     ],
