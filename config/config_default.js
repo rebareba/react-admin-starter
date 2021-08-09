@@ -36,6 +36,8 @@ module.exports = {
       pathPrefix: "/admin",
       apiPrefix: "/api",
       debug: true,
+      // 是否全部使用mock
+      mockAll: true,
       mock: {
         "global.login": "success", // failed success
         "global.loginInfo": "success", // success failed
@@ -53,10 +55,11 @@ module.exports = {
       debug: false,
       // mock数据模拟延迟
       delay: 100,
+      mockAll: false,
       mock: {
-        "global.login": "success",
-        "global.loginInfo": "success",
-        "global.logout": "success",
+        // "global.login": "success",
+        // "global.loginInfo": "success",
+        // "global.logout": "success",
       },
       // 指定public资源的域名 是否是cdn的资源
       publicHost:''

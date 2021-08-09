@@ -10,7 +10,6 @@ const rule = {
   range: (range) => RegExp(`/^{${range.join(',')}}$/`),
 }
 export default (type, value, range = [2, 12]) => {
-  console.log('type', type, value)
   // 如果类型为range 则运行对应方法
   if (type === 'range') return RegExp(`^.{${range}}.$`).test(value)
   return rule[type] ? rule[type].test(value) : RegExp(type).test(value)

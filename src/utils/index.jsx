@@ -12,6 +12,8 @@ export {default as getSiderMenu} from './get-sider-menu'
 
 export {default as getSelectOpenKeys} from './get-select-open-keys'
 
+export {default as message} from './message'
+
 export {default as tips} from './tips'
 
 export {default as history} from './history'

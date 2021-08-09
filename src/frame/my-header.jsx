@@ -13,7 +13,7 @@ const MyHeader = ({globalStore}) => {
   const renderBreadcrumb = (breadcrumbData) => {
     if (breadcrumbData && breadcrumbData.length > 0) {
       return (
-        <Breadcrumb className="FB1 ml10">
+        <Breadcrumb className="fb1 ml10">
           <Breadcrumb.Item> </Breadcrumb.Item>
           {breadcrumbData.map((item) => {
             return (
