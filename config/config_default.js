@@ -55,7 +55,7 @@ module.exports = {
       debug: false,
       // mock数据模拟延迟
       delay: 100,
-      mockAll: false,
+      mockAll: true,
       mock: {
         // "global.login": "success",
         // "global.loginInfo": "success",
