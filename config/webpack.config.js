@@ -163,7 +163,7 @@ const webpackConf = {
             ],
             plugins: [
               // 如果antd css 引用的是cdn或公共资源就可以注释， 这里的是按需加载css 所以不需要全局引入全量的andt.css
-              ["import", { "libraryName": "antd", "style": 'css'}, "antd"],
+              // ["import", { "libraryName": "antd", "style": 'css'}, "antd"],
               // ["import", { "libraryName": "antd-mobile", "style": 'css'}, "antd-mobile"],
               ['@babel/plugin-proposal-decorators', {legacy: true}],
               ['@babel/plugin-proposal-class-properties', {loose: false}],
