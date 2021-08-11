@@ -16,11 +16,10 @@ import GlobalStore from '@common/global-store'
 
 import Login from '@pages/login'
 import Frame from '@src/frame'
-import menuData from '@src/frame/menu-data'
+import menuData from '@common/menu-data'
 
 const globalStore = new GlobalStore()
 
-console.log('globalStore', globalStore)
 const stores = {globalStore}
 
 const App = () => {

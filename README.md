@@ -51,7 +51,7 @@ Github: https://github.com/rebareba/react-admin-starter
     │   ├── create-io.js	           --- 请求实例创建和mock处理
     │   ├── global-mock.json         --- 全局请求缓存
     │   └── global-store.js          --- 全局store处理
-    ├── components                   --- 公共组件层
+    ├── components                   --- 公共组件层脚手架拥有， 项目中不能存放
     │   └── icon
     ├── icons                        --- svg-sprite-loader的icon
     ├── index.html                   --- html-webpack-plugin 模板

@@ -21,7 +21,7 @@ const Frame = ({globalStore, children}) => {
           <Sider collapsed={collapsed}>
             <SiderMenu globalStore={globalStore} />
           </Sider>
-          <Content>{children}</Content>
+          <Content className="cfw">{children}</Content>
         </Layout>
       </Layout>
     )

@@ -1,5 +1,5 @@
 import {observer} from 'mobx-react'
-import {history, getSelectOpenKeys} from '@utils'
+import {history, getSelectOpenKeys, log} from '@utils'
 import {Menu} from 'antd'
 import {useLocation} from 'react-router-dom'
 
@@ -41,13 +41,13 @@ const SiderMenu = ({globalStore}) => {
   }
   const location = useLocation()
   const {selectkeys, openKeys} = getSelectOpenKeys(userMenu, location.pathname)
-  console.log('selectkeys, openKeys', selectkeys, openKeys)
+  // log('selectkeys, openKeys', selectkeys, openKeys)
   return (
     <Menu
       theme="dark"
       mode="inline"
       inlineIndent={10}
-      inlineCollapsed={collapsed}
+      // inlineCollapsed={collapsed}
       onSelect={onMenuSelect}
       onClick={onMenuSelect}
       defaultOpenKeys={openKeys}

@@ -1,5 +1,5 @@
 import {runInAction, makeAutoObservable} from 'mobx'
-import menuData from '@src/frame/menu-data'
+import menuData from '@common/menu-data'
 import {getSiderMenu, history, config} from '@utils'
 import isString from 'lodash/isString'
 import isPlainObject from 'lodash/isPlainObject'

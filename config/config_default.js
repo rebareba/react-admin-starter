@@ -5,14 +5,14 @@ module.exports = {
   projectName: pkg.name,
   version: pkg.version,
   // npm run build-cdn 打包的 publicPath 路径
-  cdnPrefix: `//cdn.dtwave.com/${pkg.name}/${pkg.version}/`,
+  cdnPrefix: `//cdn.changfeng.com/${pkg.name}/${pkg.version}/`,
   // npm run build 打包的 publicPath 路径
   versionPrefix: `/${pkg.name}/${pkg.version}/`,
   port: 8880,
   // 接口匹配转发 devServer.proxy
   proxy: {
     "/api/*": {
-      target: `http://192.168.90.160:8888`,
+      target: `http://127.0.0.1:8888`,
       changeOrigin: true, // 支持跨域请求
       secure: true,
     },
@@ -39,10 +39,7 @@ module.exports = {
       // 是否全部使用mock
       mockAll: true,
       mock: {
-        "global.login": "success", // failed success
-        "global.loginInfo": "success", // success failed
-        "login.login": "success",
-        "global.logout": "success",
+        // "global.login": "success", // failed success
       },
       // 指定public资源的域名 是否是cdn的资源
       publicHost:''

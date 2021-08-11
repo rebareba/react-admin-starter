@@ -61,7 +61,7 @@ module.exports = {
   rules: {
     semi: 0,
     'no-unused-vars': [
-      1,
+      0,
       {
         vars: 'all',
         args: 'after-used',
@@ -84,7 +84,7 @@ module.exports = {
     'react/no-access-state-in-setstate': 0, // 设置state使用原先的state
     'class-methods-use-this': 0, // class 方法中必须使用到this
     'no-return-assign': 0, // 不能返回一个赋值操作
-    'react/sort-comp': 0, // 方法定义的顺序
+    'react/sort-comp': 0, // 方F定义的顺序
     'react/static-property-placement': 0, // 关于静态属性和方法的定义地方
     'jsx-a11y/click-events-have-key-events': 0, //
     'jsx-a11y/anchor-is-valid': 0, //
@@ -96,10 +96,11 @@ module.exports = {
     'react/no-array-index-key': 0, // 不能使用index作为key
     'import/no-cycle': 0,
     'react/react-in-jsx-scope': 0,
-    'no-shadow': 1,
+    'no-shadow': 0,
     // 'no-shadow': 0,
     'consistent-return': 0,
     'no-empty': 0,
     'jsx-a11y/control-has-associated-label': 0,
+    'react/self-closing-comp': 0,
   },
 }

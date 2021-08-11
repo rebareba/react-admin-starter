@@ -29,7 +29,7 @@ const MyHeader = ({globalStore}) => {
   }
 
   return (
-    <Header className="fbh fbac" style={{background: '#fff', padding: 0}}>
+    <Header className="fbh fbac" style={{background: '#f9f9f9', padding: 0, borderBottom: '1px solid #ddd'}}>
       <div className="frame-logo p10">
         <img src={logo} className="w100 h100" />
       </div>
