@@ -12,7 +12,7 @@ import {config} from '@utils'
 import Home from '@pages/home'
 
 import ProjectManage from '@pages/list/project-manage'
-// import ClueDiscovery from '@pages/list/clue-discovery'
+import ClueDiscovery from '@pages/list/clue-discovery'
 
 const {pathPrefix} = config
 
@@ -47,12 +47,12 @@ export default [
         component: ProjectManage,
         isMenu: true,
       },
-      // {
-      //   name: '行政监察',
-      //   url: `${pathPrefix}/list/clue-discovery`,
-      //   component: ClueDiscovery,
-      //   isMenu: true,
-      // },
+      {
+        name: '处罚列表（复杂筛选）',
+        url: `${pathPrefix}/list/clue-discovery`,
+        component: ClueDiscovery,
+        isMenu: true,
+      },
     ],
   },
 

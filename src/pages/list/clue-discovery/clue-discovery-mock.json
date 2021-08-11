@@ -1,0 +1,1031 @@
+{
+	"deleteMark": {},
+	"deleteSearchHistory": {
+		"success": {
+			"success": true,
+			"message": "成功",
+			"code": "200",
+			"content": null
+		}
+	},
+	"getConfig": {
+		"success": {
+			"success": true,
+			"message": "成功",
+			"code": "200",
+			"content": [
+				{
+					"title": "行业领域",
+					"value": [
+						{
+							"name": "农、林、牧、渔业",
+							"value": 1
+						},
+						{
+							"name": "采矿业",
+							"value": 2
+						},
+						{
+							"name": "制造业",
+							"value": 3
+						},
+						{
+							"name": "建筑业",
+							"value": 4
+						},
+						{
+							"name": "批发和零售业",
+							"value": 5
+						},
+						{
+							"name": "交通运输、仓储和邮政业",
+							"value": 6
+						},
+						{
+							"name": "电力、热力、燃气及水生产和供应业",
+							"value": 7
+						},
+						{
+							"name": "住宿和餐饮业",
+							"value": 8
+						},
+						{
+							"name": "金融业",
+							"value": 9
+						},
+						{
+							"name": "房地产业",
+							"value": 10
+						},
+						{
+							"name": "租赁和商务服务业",
+							"value": 11
+						},
+						{
+							"name": "科学研究和技术服务业",
+							"value": 12
+						},
+						{
+							"name": "水利、环境和公共设施管理业",
+							"value": 13
+						},
+						{
+							"name": "信息传输、软件和信息技术服务业",
+							"value": 14
+						},
+						{
+							"name": "卫生和社会工作",
+							"value": 15
+						},
+						{
+							"name": "文化、体育和娱乐业",
+							"value": 16
+						},
+						{
+							"name": "国际组织",
+							"value": 17
+						},
+						{
+							"name": "教育",
+							"value": 18
+						},
+						{
+							"name": "居民服务、修理和其他服务业",
+							"value": 19
+						},
+						{
+							"name": "公共管理、社会保障和社会组织",
+							"value": 20
+						}
+					],
+					"key": "trade_field_id"
+				},
+				{
+					"title": "行政区域",
+					"value": [
+						{
+							"name": "市本级",
+							"value": 3
+						},
+						{
+							"name": "AA区",
+							"value": 25
+						},
+						{
+							"name": "LW区",
+							"value": 52
+						},
+						{
+							"name": "BB区",
+							"value": 64
+						},
+						{
+							"name": "CC区",
+							"value": 79
+						},
+						{
+							"name": "DD县",
+							"value": 87
+						},
+						{
+							"name": "py县",
+							"value": 133
+						},
+						{
+							"name": "cnx",
+							"value": 167
+						},
+						{
+							"name": "EE县",
+							"value": 204
+						},
+						{
+							"name": "FF县",
+							"value": 240
+						},
+						{
+							"name": "HH市",
+							"value": 278
+						},
+						{
+							"name": "II市",
+							"value": 324
+						},
+						{
+							"name": "JJ市",
+							"value": 359
+						}
+					],
+					"key": "region_id"
+				},
+				{
+					"title": "企业类型",
+					"value": [
+						{
+							"name": "有限责任公司",
+							"value": 1
+						},
+						{
+							"name": "股份有限公司",
+							"value": 2
+						},
+						{
+							"name": "股份合作公司",
+							"value": 3
+						},
+						{
+							"name": "国有企业",
+							"value": 4
+						},
+						{
+							"name": "集体所有制",
+							"value": 5
+						},
+						{
+							"name": "个体工商户",
+							"value": 6
+						},
+						{
+							"name": "独资企业",
+							"value": 7
+						},
+						{
+							"name": "有限合伙",
+							"value": 8
+						},
+						{
+							"name": "普通合伙",
+							"value": 9
+						},
+						{
+							"name": "外商投资企业",
+							"value": 10
+						},
+						{
+							"name": "港、澳、台商投资企业",
+							"value": 11
+						},
+						{
+							"name": "联营企业",
+							"value": 12
+						},
+						{
+							"name": "私营企业",
+							"value": 13
+						}
+					],
+					"key": "enterprise_type_id"
+				},
+				{
+					"title": "组织机构",
+					"value": [],
+					"key": "organization_id"
+				},
+				{
+					"title": "登记状态",
+					"value": [
+						{
+							"name": "在业/存续",
+							"value": "subsist"
+						},
+						{
+							"name": "清算",
+							"value": "liquidation"
+						},
+						{
+							"name": "迁入",
+							"value": "moveIn"
+						},
+						{
+							"name": "迁出",
+							"value": "moveOut"
+						},
+						{
+							"name": "停业",
+							"value": "closeDown"
+						},
+						{
+							"name": "撤销",
+							"value": "revoke"
+						}
+					],
+					"key": "register_status"
+				},
+				{
+					"title": "经营状态",
+					"value": [
+						{
+							"name": "正常",
+							"value": "normal"
+						},
+						{
+							"name": "经营异常",
+							"value": "abnormal"
+						},
+						{
+							"name": "严重违法失信",
+							"value": "violationAndDishones"
+						}
+					],
+					"key": "operation_status"
+				},
+				{
+					"title": "成立年限",
+					"value": [],
+					"key": "found_time"
+				},
+				{
+					"title": "注册资本",
+					"value": [],
+					"key": "register_capital"
+				},
+				{
+					"title": "实缴资本",
+					"value": [],
+					"key": "paid_capital"
+				},
+				{
+					"title": "资本类型",
+					"value": [
+						{
+							"name": "人民币",
+							"value": "RMB"
+						},
+						{
+							"name": "美元",
+							"value": "dollar"
+						},
+						{
+							"name": "其他",
+							"value": "other"
+						}
+					],
+					"key": "capital_type"
+				},
+				{
+					"title": "纳税信用",
+					"value": [
+						{
+							"name": "A级",
+							"value": "classA"
+						},
+						{
+							"name": "B级",
+							"value": "classB"
+						},
+						{
+							"name": "C级",
+							"value": "classC"
+						},
+						{
+							"name": "D级",
+							"value": "classD"
+						},
+						{
+							"name": "M级",
+							"value": "classM"
+						}
+					],
+					"key": "tax_credit"
+				},
+				{
+					"title": "参保人数",
+					"value": [],
+					"key": "insured_num"
+				},
+				{
+					"title": "工商变更",
+					"value": [
+						{
+							"name": "企业名称变更",
+							"value": 1
+						}
+					],
+					"key": "business_change_id"
+				},
+				{
+					"title": "判决日期",
+					"value": [],
+					"key": "sentence_date"
+				},
+				{
+					"title": "发布日期",
+					"value": [],
+					"key": "publish_date"
+				},
+				{
+					"title": "审理程序",
+					"value": [
+						{
+							"name": "行政一审",
+							"value": 8
+						},
+						{
+							"name": "行政二审",
+							"value": 9
+						},
+						{
+							"name": "行政宣判监督",
+							"value": 10
+						},
+						{
+							"name": "行政非诉审查",
+							"value": 11
+						},
+						{
+							"name": "其他",
+							"value": 12
+						}
+					],
+					"key": "trial_procedure_id"
+				},
+				{
+					"title": "审理法院",
+					"value": [
+						{
+							"name": "xx市人民法院",
+							"value": 1
+						},
+						{
+							"name": "AA区人民法院",
+							"value": 2
+						}
+					],
+					"key": "court_id"
+				},
+				{
+					"title": "公开类型",
+					"value": [
+						{
+							"name": "文书公开",
+							"value": "1"
+						},
+						{
+							"name": "信息公开",
+							"value": "2"
+						}
+					],
+					"key": "open_type"
+				},
+				{
+					"title": "文书类型",
+					"value": [],
+					"key": "doc_type"
+				},
+				{
+					"title": "立案日期",
+					"value": [],
+					"key": "register_date"
+				},
+				{
+					"title": "终本日期",
+					"value": [],
+					"key": "final_date"
+				},
+				{
+					"title": "执行标的",
+					"value": [],
+					"key": "execute_target"
+				},
+				{
+					"title": "未履金额",
+					"value": [],
+					"key": "no_perform_money"
+				},
+				{
+					"title": "是否失信",
+					"value": [
+						{
+							"name": "是",
+							"value": "1"
+						},
+						{
+							"name": "否",
+							"value": "0"
+						}
+					],
+					"key": "no_credit"
+				},
+				{
+					"title": "是否限消",
+					"value": [
+						{
+							"name": "是",
+							"value": "1"
+						},
+						{
+							"name": "否",
+							"value": "0"
+						}
+					],
+					"key": "limit_pin"
+				},
+				{
+					"title": "处罚金额",
+					"value": [],
+					"key": "punish_money"
+				},
+				{
+					"title": "没收金额",
+					"value": [],
+					"key": "confiscate_money"
+				},
+				{
+					"title": "处罚决定日期",
+					"value": [],
+					"key": "decision_date"
+				},
+				{
+					"title": "处罚是否变更",
+					"value": [
+						{
+							"name": "是",
+							"value": "1"
+						},
+						{
+							"name": "否",
+							"value": "0"
+						}
+					],
+					"key": "punish_is_change"
+				}
+			]
+		}
+	},
+	"getDiscoveryInfo": {
+		"success": {
+			"success": true,
+			"message": "成功",
+			"code": "200",
+			"content": {
+				"id": 1,
+				"subjectName": "cnx灵x镇星XX饭店",
+				"creditCode": "923x2xdaladdff3wrrwrw",
+				"regionId": 133,
+				"regionName": "py县",
+				"unitId": 330327,
+				"enterpriseTypeId": 1,
+				"enterpriseTypeName": "大陆企业",
+				"legalPerson": null,
+				"registerStatus": null,
+				"operationStatus": null,
+				"foundTime": null,
+				"registerCapital": null,
+				"paidCapital": null,
+				"capitalType": null,
+				"tradeFieldId": null,
+				"organizationId": 1,
+				"businessChangeId": null,
+				"taxCredit": null,
+				"insuredNum": null,
+				"isSign": 0,
+				"remark": null,
+				"adminPunishList": [
+					1
+				],
+				"refereeDocList": [
+					1
+				],
+				"executeInfoList": [
+					1
+				],
+				"executeResumeList": [
+					1
+				],
+				"ctime": "2021-07-27T05:22:04.000+0000",
+				"mtime": "2021-07-28T09:05:36.000+0000"
+			}
+		}
+	},
+	"getDiscoveryList": {
+		"success": {
+			"success": true,
+			"message": "成功",
+			"code": "200",
+			"content": {
+				"records": [
+					{
+						"id": 1,
+						"subjectName": "cnx灵x镇星XX饭店",
+						"creditCode": "923x2xdaladdff3wrrwrw",
+						"regionId": 133,
+						"regionName": "py县",
+						"unitId": 330327,
+						"enterpriseTypeId": 1,
+						"enterpriseTypeName": "大陆企业",
+						"legalPerson": null,
+						"registerStatus": null,
+						"operationStatus": null,
+						"foundTime": null,
+						"registerCapital": null,
+						"paidCapital": null,
+						"capitalType": null,
+						"tradeFieldId": null,
+						"organizationId": 1,
+						"businessChangeId": null,
+						"taxCredit": null,
+						"insuredNum": null,
+						"isSign": 0,
+						"remark": null,
+						"adminPunishId": 1,
+						"punishTitle": "cnx灵x镇星XX饭店未进行劳动报酬行政处理决定",
+						"punishCode": "X人社监理决字〔2019〕15号",
+						"refereeDocId": null,
+						"docTitle": "",
+						"docCode": null,
+						"executeInfoId": null,
+						"infoTitle": null,
+						"infoCode": null,
+						"executeResumeId": null,
+						"resumeTitle": null,
+						"resumeCode": null,
+						"ctime": "2021-07-27T05:22:04.000+0000",
+						"mtime": "2021-07-28T09:05:36.000+0000"
+					},
+					{
+						"id": 2,
+						"subjectName": "cnx灵x镇星XX饭店",
+						"creditCode": "923x2xdaladdff3wrrwrw",
+						"regionId": 133,
+						"regionName": "py县",
+						"unitId": 330327,
+						"enterpriseTypeId": 1,
+						"enterpriseTypeName": "大陆企业",
+						"legalPerson": null,
+						"registerStatus": null,
+						"operationStatus": null,
+						"foundTime": null,
+						"registerCapital": null,
+						"paidCapital": null,
+						"capitalType": null,
+						"tradeFieldId": null,
+						"organizationId": 1,
+						"businessChangeId": null,
+						"taxCredit": null,
+						"insuredNum": null,
+						"isSign": 0,
+						"remark": null,
+						"adminPunishId": null,
+						"punishTitle": null,
+						"punishCode": null,
+						"refereeDocId": 1,
+						"docTitle": "cnx人力资源和社会保障局、cnx灵x镇星外\n\n楼饭店非诉执行审查行政裁定书",
+						"docCode": "（2020）Zx327行审97号",
+						"executeInfoId": null,
+						"infoTitle": null,
+						"infoCode": null,
+						"executeResumeId": null,
+						"resumeTitle": null,
+						"resumeCode": null,
+						"ctime": "2021-07-27T05:22:21.000+0000",
+						"mtime": "2021-07-28T09:05:37.000+0000"
+					},
+					{
+						"id": 3,
+						"subjectName": "cnx灵x镇星XX饭店",
+						"creditCode": "923x2xdaladdff3wrrwrw",
+						"regionId": 133,
+						"regionName": "py县",
+						"unitId": 330327,
+						"enterpriseTypeId": 1,
+						"enterpriseTypeName": "大陆企业",
+						"legalPerson": null,
+						"registerStatus": null,
+						"operationStatus": null,
+						"foundTime": null,
+						"registerCapital": null,
+						"paidCapital": null,
+						"capitalType": null,
+						"tradeFieldId": null,
+						"organizationId": 1,
+						"businessChangeId": null,
+						"taxCredit": null,
+						"insuredNum": null,
+						"isSign": 0,
+						"remark": null,
+						"adminPunishId": null,
+						"punishTitle": null,
+						"punishCode": null,
+						"refereeDocId": null,
+						"docTitle": null,
+						"docCode": null,
+						"executeInfoId": 1,
+						"infoTitle": "cnx灵x镇星XX饭店",
+						"infoCode": "2020）Zx327执1169号",
+						"executeResumeId": 1,
+						"resumeTitle": "cnx灵x镇星XX饭店",
+						"resumeCode": "2020）Zx327执1169号",
+						"ctime": "2021-07-27T05:22:38.000+0000",
+						"mtime": "2021-07-28T09:05:38.000+0000"
+					}
+				],
+				"total": 3,
+				"size": 10,
+				"current": 1,
+				"orders": [],
+				"optimizeCountSql": true,
+				"hitCount": false,
+				"countId": null,
+				"maxLimit": null,
+				"searchCount": true,
+				"pages": 1
+			}
+		}
+	},
+	"getExecuteList": {
+		"success": {
+			"success": true,
+			"message": "成功",
+			"code": "200",
+			"content": {
+				"records": [
+					{
+						"id": 1,
+						"infoTitle": "cnx灵x镇星XX饭店",
+						"name": "2020）Zx327执1169号",
+						"infoCode": null,
+						"courtId": null,
+						"docCode": null,
+						"registerDate": null,
+						"noCredit": null,
+						"limitPin": null,
+						"finalDate": null,
+						"publishDate": null,
+						"executeTarget": null,
+						"noPerformMoney": null,
+						"content": null,
+						"fileName": null,
+						"filePath": null,
+						"ctime": "2021-07-27T05:20:32.000+0000",
+						"mtime": "2021-07-27T05:20:44.000+0000"
+					}
+				],
+				"total": 1,
+				"size": 10,
+				"current": 1,
+				"orders": [],
+				"optimizeCountSql": true,
+				"hitCount": false,
+				"countId": null,
+				"maxLimit": null,
+				"searchCount": true,
+				"pages": 1
+			}
+		}
+	},
+	"getJudgmentList": {
+		"success": {
+			"success": true,
+			"message": "成功",
+			"code": "200",
+			"content": {
+				"records": [
+					{
+						"id": 1,
+						"docTitle": "cnx人力资源和社会保障局、cnx灵x镇星外\n\n楼饭店非诉执行审查行政裁定书",
+						"docCode": "（2020）Zx327行审97号",
+						"causeSubject": null,
+						"causeAction": null,
+						"legalBasis": null,
+						"trialProcedureId": null,
+						"courtId": null,
+						"sentenceDate": null,
+						"publishDate": null,
+						"judgeLeader": null,
+						"judge": null,
+						"lawFirm": null,
+						"lawyer": null,
+						"openType": null,
+						"docType": null,
+						"content": null,
+						"fileName": null,
+						"filePath": null,
+						"ctime": "2021-07-27T03:38:06.000+0000",
+						"mtime": "2021-07-27T03:38:27.000+0000"
+					}
+				],
+				"total": 1,
+				"size": 10,
+				"current": 1,
+				"orders": [],
+				"optimizeCountSql": true,
+				"hitCount": false,
+				"countId": null,
+				"maxLimit": null,
+				"searchCount": true,
+				"pages": 1
+			}
+		}
+	},
+	"getMarkList": {
+		"success": {
+			"success": true,
+			"message": "成功",
+			"code": "200",
+			"content": {
+				"records": [],
+				"total": 0,
+				"size": 10,
+				"current": 1,
+				"orders": [],
+				"optimizeCountSql": true,
+				"hitCount": false,
+				"countId": null,
+				"maxLimit": null,
+				"searchCount": true,
+				"pages": 0
+			}
+		}
+	},
+	"getPunishList": {
+		"success": {
+			"success": true,
+			"message": "成功",
+			"code": "200",
+			"content": {
+				"records": [
+					{
+						"id": 1,
+						"punishTitle": "cnx灵x镇星XX饭店未进行劳动报酬行政处理决定",
+						"punishCode": "X人社监理决字〔2019〕15号",
+						"punishOfficeName": null,
+						"lllegalActType": null,
+						"punishBasis": null,
+						"punishType": null,
+						"punishMoney": null,
+						"confiscateMoney": null,
+						"decisionDate": null,
+						"publicityDate": null,
+						"publicityEndDate": null,
+						"punishIsChange": null,
+						"content": null,
+						"fileName": null,
+						"filePath": null,
+						"ctime": "2021-07-27T05:19:35.000+0000",
+						"mtime": "2021-07-27T05:19:46.000+0000"
+					}
+				],
+				"total": 1,
+				"size": 10,
+				"current": 1,
+				"orders": [],
+				"optimizeCountSql": true,
+				"hitCount": false,
+				"countId": null,
+				"maxLimit": null,
+				"searchCount": true,
+				"pages": 1
+			}
+		}
+	},
+	"getSearchHistories": {
+		"success": {
+			"success": true,
+			"message": "成功",
+			"code": "200",
+			"content": {
+				"records": [
+					{
+						"id": 46,
+						"title": "我的搜索",
+						"userId": 149,
+						"type": "other",
+						"keyword": "",
+						"ctime": "2021-07-29T08:44:45.000+0000",
+						"mtime": "2021-07-29T08:44:45.000+0000",
+						"basSearchTerms": [
+							{
+								"id": 65,
+								"searchRecordId": 46,
+								"type": null,
+								"customUnit": null,
+								"name": "AA区",
+								"key": "region_id",
+								"sectionKey": "subject",
+								"startData": null,
+								"endData": null,
+								"value": "25",
+								"ctime": "2021-07-29T08:44:45.000+0000",
+								"mtime": "2021-07-29T08:44:45.000+0000"
+							},
+							{
+								"id": 66,
+								"searchRecordId": 46,
+								"type": null,
+								"customUnit": null,
+								"name": "BB区",
+								"key": "region_id",
+								"sectionKey": "subject",
+								"startData": null,
+								"endData": null,
+								"value": "64",
+								"ctime": "2021-07-29T08:44:45.000+0000",
+								"mtime": "2021-07-29T08:44:45.000+0000"
+							},
+							{
+								"id": 67,
+								"searchRecordId": 46,
+								"type": null,
+								"customUnit": null,
+								"name": "CC区",
+								"key": "region_id",
+								"sectionKey": "subject",
+								"startData": null,
+								"endData": null,
+								"value": "79",
+								"ctime": "2021-07-29T08:44:45.000+0000",
+								"mtime": "2021-07-29T08:44:45.000+0000"
+							}
+						]
+					},
+					{
+						"id": 47,
+						"title": "我的搜索2",
+						"userId": 149,
+						"type": "other",
+						"keyword": "",
+						"ctime": "2021-07-29T08:45:13.000+0000",
+						"mtime": "2021-07-29T08:45:13.000+0000",
+						"basSearchTerms": [
+							{
+								"id": 68,
+								"searchRecordId": 47,
+								"type": null,
+								"customUnit": null,
+								"name": "3-6个月",
+								"key": "publish_date",
+								"sectionKey": "judgement",
+								"startData": null,
+								"endData": null,
+								"value": "2021-01-29,2021-04-29",
+								"ctime": "2021-07-29T08:45:13.000+0000",
+								"mtime": "2021-07-29T08:45:13.000+0000"
+							},
+							{
+								"id": 69,
+								"searchRecordId": 47,
+								"type": null,
+								"customUnit": null,
+								"name": "1-3个月",
+								"key": "publish_date",
+								"sectionKey": "judgement",
+								"startData": null,
+								"endData": null,
+								"value": "2021-04-29,2021-06-29",
+								"ctime": "2021-07-29T08:45:13.000+0000",
+								"mtime": "2021-07-29T08:45:13.000+0000"
+							},
+							{
+								"id": 70,
+								"searchRecordId": 47,
+								"type": null,
+								"customUnit": null,
+								"name": "6-12个月",
+								"key": "publish_date",
+								"sectionKey": "judgement",
+								"startData": null,
+								"endData": null,
+								"value": "2020-07-29,2021-01-29",
+								"ctime": "2021-07-29T08:45:13.000+0000",
+								"mtime": "2021-07-29T08:45:13.000+0000"
+							}
+						]
+					},
+					{
+						"id": 48,
+						"title": "5",
+						"userId": 149,
+						"type": "other",
+						"keyword": "",
+						"ctime": "2021-07-29T08:56:29.000+0000",
+						"mtime": "2021-07-29T08:56:29.000+0000",
+						"basSearchTerms": [
+							{
+								"id": 71,
+								"searchRecordId": 48,
+								"type": null,
+								"customUnit": null,
+								"name": "AA区",
+								"key": "region_id",
+								"sectionKey": "subject",
+								"startData": null,
+								"endData": null,
+								"value": "25",
+								"ctime": "2021-07-29T08:56:29.000+0000",
+								"mtime": "2021-07-29T08:56:29.000+0000"
+							},
+							{
+								"id": 72,
+								"searchRecordId": 48,
+								"type": null,
+								"customUnit": null,
+								"name": "BB区",
+								"key": "region_id",
+								"sectionKey": "subject",
+								"startData": null,
+								"endData": null,
+								"value": "64",
+								"ctime": "2021-07-29T08:56:29.000+0000",
+								"mtime": "2021-07-29T08:56:29.000+0000"
+							},
+							{
+								"id": 73,
+								"searchRecordId": 48,
+								"type": null,
+								"customUnit": null,
+								"name": "CC区",
+								"key": "region_id",
+								"sectionKey": "subject",
+								"startData": null,
+								"endData": null,
+								"value": "79",
+								"ctime": "2021-07-29T08:56:29.000+0000",
+								"mtime": "2021-07-29T08:56:29.000+0000"
+							},
+							{
+								"id": 74,
+								"searchRecordId": 48,
+								"type": null,
+								"customUnit": null,
+								"name": "AA区",
+								"key": "region_id",
+								"sectionKey": "subject",
+								"startData": null,
+								"endData": null,
+								"value": "25",
+								"ctime": "2021-07-29T08:56:29.000+0000",
+								"mtime": "2021-07-29T08:56:29.000+0000"
+							}
+						]
+					}
+				],
+				"total": 3,
+				"size": 1000,
+				"current": 1,
+				"orders": [],
+				"optimizeCountSql": true,
+				"hitCount": false,
+				"countId": null,
+				"maxLimit": null,
+				"searchCount": true,
+				"pages": 1
+			}
+		}
+	},
+	"saveSearchHistory": {
+		"success": {
+			"success": true,
+			"message": "成功",
+			"code": "200",
+			"content": null
+		}
+	},
+	"addMark": {
+		"success": {
+			"success": true,
+			"message": "成功",
+			"code": "200",
+			"content": null
+		}
+	}
+}
