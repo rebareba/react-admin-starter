@@ -1,0 +1,501 @@
+{
+  "getFilterList": {
+		"success": {
+			"success": true,
+			"code": 0,
+			"content": {
+				"stage" : [{"id":1,"name":"商务阶段"},{"id":2,"name":"立项阶段"},{"id":3,"name":"启动阶段"},{"id":4,"name":"需求阶段"},{"id":5,"name":"产品设计阶段"},{"id":6,"name":"编码开发阶段"},{"id":7,"name":"测试阶段"},{"id":8,"name":"部署上线"},{"id":9,"name":"交付验收"},{"id":10,"name":"项目结项"},{"id":11,"name":"运营阶段"},{"id":99,"name":"自定义阶段"}],
+        "type" : [{"id":1,"name":"交付项目"},{"id":2,"name":"内研项目"},{"id":3,"name":"售前项目"},{"id":4,"name":"公共项目"},{"id":30,"name":"售后项目"},{"id":40,"name":"内部非研项目"}],
+        "status" : [{"id":1,"name":"已中标"},{"id":2,"name":"已签订"},{"id":3,"name":"拟签"},{"id":4,"name":"内部研发"},{"id":99,"name":"其他"}],
+        "securityLevel": [{"id":1,"name":"S1"},{"id":2,"name":"S2"},{"id":3,"name":"S3"},{"id":4,"name":"S4"}],
+        "mile": [{"id":3,"name":"需求确认"},{"id":1,"name":"项目上线"},{"id":2,"name":"项目验收"}]
+			},
+			"message": ""
+		}
+	},
+	"getProjectList": {
+		"success": {
+			"code": "OK",
+			"success": true,
+			"content": {
+				"list": [{
+					"projectId": "e232f6f16113a18298b05d18",
+					"name": "xxxxx配货商城大屏2期改造项目",
+					"code": "SLJF21064",
+					"type": "交付项目",
+					"state": 1,
+					"status": "拟签",
+					"startAt": "2021-08-04 00:00:00",
+					"endAt": "2021-09-27 00:00:00",
+					"descr": "配货商城",
+					"stages": null,
+					"milestones": null,
+					"securityLevel": 3,
+					"pmWeeklySwitch": "N",
+					"pmWeeklyOwner": 0,
+					"ctime": "2021-08-09 11:59:07",
+					"mtime": "2021-08-09 11:59:07",
+					"pm": [{
+						"userId": 26,
+						"userName": "xx鹏(x朋)",
+						"dingUserId": "28285320220907",
+						"avatar": ""
+					}],
+					"technician": [{
+						"userId": 26,
+						"userName": "xx鹏(x朋)",
+						"dingUserId": "28285320220907",
+						"avatar": ""
+					}],
+					"member": [{
+						"userId": 26,
+						"userName": "xx鹏(x朋)",
+						"dingUserId": "28285320220907",
+						"avatar": ""
+					}],
+					"opportunity": {
+						"id": "60cc1070c4468b0001d12400",
+						"name": "配货商城大屏2期"
+					}
+				}, {
+					"projectId": "6e4395fb0edf5badbf951ff6",
+					"name": "xxxx客户数据中台项目",
+					"code": "SLJF21063",
+					"type": "交付项目",
+					"state": 1,
+					"status": "已中标",
+					"startAt": "2021-08-04 00:00:00",
+					"endAt": "2022-02-28 00:00:00",
+					"descr": "",
+					"stages": null,
+					"milestones": null,
+					"securityLevel": 2,
+					"pmWeeklySwitch": "N",
+					"pmWeeklyOwner": 0,
+					"ctime": "2021-08-09 10:49:36",
+					"mtime": "2021-08-09 10:49:36",
+					"pm": [{
+						"userId": 1175,
+						"userName": "陈xx(x华)",
+						"dingUserId": "014102255137640694",
+						"avatar": ""
+					}],
+					"technician": [{
+						"userId": 76,
+						"userName": "黄xxx(寒x)",
+						"dingUserId": "433352-935822476",
+						"avatar": ""
+					}],
+					"member": [{
+						"userId": 76,
+						"userName": "黄xx(x)",
+						"dingUserId": "433352-935822476",
+						"avatar": ""
+					}],
+					"opportunity": {
+						"id": "5f0846d8059c850001083041",
+						"name": "xxxx数据中台"
+					}
+				}, {
+					"projectId": "81d976e00dd90829e0308eb3",
+					"name": "中国xxxx管理平台项目",
+					"code": "SLJF21061",
+					"type": "交付项目",
+					"state": 1,
+					"status": "拟签",
+					"startAt": "2021-08-02 00:00:00",
+					"endAt": "2022-01-30 00:00:00",
+					"descr": null,
+					"stages": null,
+					"milestones": null,
+					"securityLevel": 2,
+					"pmWeeklySwitch": "N",
+					"pmWeeklyOwner": 0,
+					"ctime": "2021-08-06 16:57:36",
+					"mtime": "2021-08-06 16:57:36",
+					"pm": [{
+						"userId": 1076,
+						"userName": "龚xxx(潜x)",
+						"dingUserId": "1616133822276704",
+						"avatar": "https://static-legacy.dingtalk.com/media/lADPD2eDPezctvLNAwDNAwA_768_768.jpg"
+					}],
+					"technician": [{
+						"userId": 276,
+						"userName": "xx强(无极)",
+						"dingUserId": "15534768091755816",
+						"avatar": ""
+					}],
+					"member": [{
+						"userId": 276,
+						"userName": "xx强(无极)",
+						"dingUserId": "15534768091755816",
+						"avatar": ""
+					}],
+					"opportunity": {
+						"id": "NO_OPPORTUNITY",
+						"name": "无商机"
+					}
+				}, {
+					"projectId": "2664a60de999e6befc47e3d1",
+					"name": "xx“数字大脑”项目咨询与实施（轻）",
+					"code": "SLJF21062",
+					"type": "交付项目",
+					"state": 1,
+					"status": "已签订",
+					"startAt": "2021-06-06 00:00:00",
+					"endAt": "2021-09-30 00:00:00",
+					"descr": null,
+					"stages": null,
+					"milestones": null,
+					"securityLevel": 2,
+					"pmWeeklySwitch": "N",
+					"pmWeeklyOwner": 0,
+					"ctime": "2021-08-06 11:04:47",
+					"mtime": "2021-08-06 11:04:47",
+					"pm": [{
+						"userId": 1208,
+						"userName": "xxx(阿x栋)",
+						"dingUserId": "16214744307897830",
+						"avatar": "https://static-legacy.dingtalk.com/media/lADPD3W5OePOVy_NAbDNAbA_432_432.jpg"
+					}],
+					"technician": [{
+						"userId": 468,
+						"userName": "杨xxx(x)",
+						"dingUserId": "1563074361043189",
+						"avatar": "https://static-legacy.dingtalk.com/media/lADPD26ePkQK6s7NAXXNAXY_374_373.jpg"
+					}],
+					"member": [{
+						"userId": 468,
+						"userName": "杨x维(x维)",
+						"dingUserId": "1563074361043189",
+						"avatar": "https://static-legacy.dingtalk.com/media/lADPD26ePkQK6s7NAXXNAXY_374_373.jpg"
+					}],
+					"opportunity": {
+						"id": "60a261d3b917df0001704214",
+						"name": "正xxx项目轻咨询与实施"
+					}
+				}, {
+					"projectId": "2aba05407b18c49ce48cd2c9",
+					"name": "xxxx人大-民意智能提取&数据查重项目",
+					"code": "SLJF21060",
+					"type": "交付项目",
+					"state": 1,
+					"status": "拟签",
+					"startAt": "2021-08-02 00:00:00",
+					"endAt": "2022-01-07 00:00:00",
+					"descr": "。",
+					"stages": null,
+					"milestones": null,
+					"securityLevel": 3,
+					"pmWeeklySwitch": "N",
+					"pmWeeklyOwner": 0,
+					"ctime": "2021-08-03 16:47:34",
+					"mtime": "2021-08-03 16:47:34",
+					"pm": [{
+						"userId": 1085,
+						"userName": "孙xx(人才)",
+						"dingUserId": "16165490318848895",
+						"avatar": ""
+					}],
+					"technician": [{
+						"userId": 1081,
+						"userName": "王xxx(金x)",
+						"dingUserId": "16165490433246116",
+						"avatar": ""
+					}],
+					"member": [{
+						"userId": 26,
+						"userName": "xx鹏(x朋)",
+						"dingUserId": "28285320220907",
+						"avatar": ""
+					}, {
+						"userId": 197,
+						"userName": "于xxx(子x)",
+						"dingUserId": "092927332020223564",
+						"avatar": ""
+					}, {
+						"userId": 653,
+						"userName": "陈x(x子)",
+						"dingUserId": "15844990059163238",
+						"avatar": ""
+					}, {
+						"userId": 837,
+						"userName": "程xx",
+						"dingUserId": "1598353980750517",
+						"avatar": "https://static-legacy.dingtalk.com/media/lADPD4Bhq6GiGWvNAoDNAoA_640_640.jpg"
+					}, {
+						"userId": 1081,
+						"userName": "王xx",
+						"dingUserId": "16165490433246116",
+						"avatar": ""
+					}, {
+						"userId": 1083,
+						"userName": "尹x(铁x)",
+						"dingUserId": "16165508399837497",
+						"avatar": "https://static-legacy.dingtalk.com/media/lADPD3lGtvyjef3NAbDNAbA_432_432.jpg"
+					}, {
+						"userId": 1094,
+						"userName": "朱xx(山子)",
+						"dingUserId": "16169821351138570",
+						"avatar": ""
+					}],
+					"opportunity": {
+						"id": "NO_OPPORTUNITY",
+						"name": "无商机"
+					}
+				}, {
+					"projectId": "245ec7c3657f6666b6591ba0",
+					"name": "xxxx升级扩容项目",
+					"code": "SLJF21059",
+					"type": "交付项目",
+					"state": 1,
+					"status": "已签订",
+					"startAt": "2021-08-02 00:00:00",
+					"endAt": "2021-10-20 00:00:00",
+					"descr": "",
+					"stages": null,
+					"milestones": null,
+					"securityLevel": 2,
+					"pmWeeklySwitch": "N",
+					"pmWeeklyOwner": 0,
+					"ctime": "2021-08-03 14:29:58",
+					"mtime": "2021-08-03 14:29:58",
+					"pm": [{
+						"userId": 824,
+						"userName": "许xx",
+						"dingUserId": "15976271996775012",
+						"avatar": ""
+					}],
+					"technician": [{
+						"userId": 117,
+						"userName": "张xxx",
+						"dingUserId": "066403513724292781",
+						"avatar": "https://static-legacy.dingtalk.com/media/lADPD26eNP6CVanNAz3NAsw_716_829.jpg"
+					}],
+					"member": [{
+						"userId": 117,
+						"userName": "张xxx",
+						"dingUserId": "066403513724292781",
+						"avatar": "https://static-legacy.dingtalk.com/media/lADPD26eNP6CVanNAz3NAsw_716_829.jpg"
+					}],
+					"opportunity": {
+						"id": "NO_OPPORTUNITY",
+						"name": "无商机"
+					}
+				}, {
+					"projectId": "b433d2484707a62018f8faf0",
+					"name": "xxx大数据平台项目",
+					"code": "SLSH20074-1",
+					"type": "售后项目",
+					"state": 1,
+					"status": "售后维护",
+					"startAt": "2021-08-02 00:00:00",
+					"endAt": "2021-08-15 00:00:00",
+					"descr": "",
+					"stages": null,
+					"milestones": null,
+					"securityLevel": null,
+					"pmWeeklySwitch": "N",
+					"pmWeeklyOwner": 0,
+					"ctime": "2021-08-02 18:21:35",
+					"mtime": "2021-08-02 18:21:48",
+					"pm": [{
+						"userId": 146,
+						"userName": "王xx",
+						"dingUserId": "115508544129174136",
+						"avatar": ""
+					}],
+					"technician": [],
+					"member": [{
+						"userId": 1006,
+						"userName": "路姜xx",
+						"dingUserId": "16141471135807011",
+						"avatar": ""
+					}],
+					"opportunity": {
+						"id": "NO_OPPORTUNITY",
+						"name": "无商机"
+					}
+				}, {
+					"projectId": "81467b451dbd0aa4e2cb42be",
+					"name": "xxx地产营销看板展示项目",
+					"code": "SLJF21058",
+					"type": "交付项目",
+					"state": 1,
+					"status": "已签订",
+					"startAt": "2021-07-23 00:00:00",
+					"endAt": "2021-09-30 00:00:00",
+					"descr": "金茂地产针对营销看板展示建设一个可视化的展示界面工具",
+					"stages": null,
+					"milestones": null,
+					"securityLevel": 2,
+					"pmWeeklySwitch": "N",
+					"pmWeeklyOwner": 0,
+					"ctime": "2021-07-26 15:09:34",
+					"mtime": "2021-07-26 15:10:01",
+					"pm": [{
+						"userId": 956,
+						"userName": "方xxx",
+						"dingUserId": "16090645126039808",
+						"avatar": ""
+					}],
+					"technician": [{
+						"userId": 598,
+						"userName": "闫xx",
+						"dingUserId": "15753551763986455",
+						"avatar": ""
+					}],
+					"member": [{
+						"userId": 956,
+						"userName": "方xxx",
+						"dingUserId": "16090645126039808",
+						"avatar": ""
+					}],
+					"opportunity": {
+						"id": "60389eab116bdb00014fcbf5",
+						"name": "xx地产项目"
+					}
+				}, {
+					"projectId": "c85ef90ea674f0f7e8fe3339",
+					"name": "xx计风控项目",
+					"code": "SLJF21057",
+					"type": "交付项目",
+					"state": 1,
+					"status": "拟签",
+					"startAt": "2021-07-19 00:00:00",
+					"endAt": "2021-11-30 00:00:00",
+					"descr": "xxx审计\n（1）数字化审计平台\n（2）审计指标",
+					"stages": null,
+					"milestones": null,
+					"securityLevel": 3,
+					"pmWeeklySwitch": "N",
+					"pmWeeklyOwner": 0,
+					"ctime": "2021-07-24 11:42:21",
+					"mtime": "2021-07-27 17:24:19",
+					"pm": [{
+						"userId": 11,
+						"userName": "俞xx(xx)",
+						"dingUserId": "435303847067",
+						"avatar": "https://static-legacy.dingtalk.com/media/lADPDhJzv1mFr1XNAZHNAZI_402_401.jpg"
+					}],
+					"technician": [{
+						"userId": 76,
+						"userName": "黄xx",
+						"dingUserId": "433352-935822476",
+						"avatar": ""
+					}],
+					"member": [{
+						"userId": 76,
+						"userName": "黄xx",
+						"dingUserId": "433352-935822476",
+						"avatar": ""
+					}, {
+						"userId": 78,
+						"userName": "陈x",
+						"dingUserId": "021006106237618474",
+						"avatar": ""
+					}, {
+						"userId": 250,
+						"userName": "龚世x",
+						"dingUserId": "15522685696706445",
+						"avatar": "https://static-legacy.dingtalk.com/media/lADPDgQ9rTcDkufM3Mzc_220_220.jpg"
+					}, {
+						"userId": 277,
+						"userName": "潘xx",
+						"dingUserId": "15534236695398921",
+						"avatar": "https://static-legacy.dingtalk.com/media/lADPDgQ9rTx6RAvNAZbNAYQ_388_406.jpg"
+					}, {
+						"userId": 289,
+						"userName": "王xxx",
+						"dingUserId": "15537353389037897",
+						"avatar": "https://static-legacy.dingtalk.com/media/lADPD4PvL7Ht_YrNDy3NDy0_3885_3885.jpg"
+					}, {
+						"userId": 488,
+						"userName": "杨xxx",
+						"dingUserId": "15636058869049489",
+						"avatar": "https://static-legacy.dingtalk.com/media/lADPDhmOvHR67j7NAu7NAuw_748_750.jpg"
+					}, {
+						"userId": 680,
+						"userName": "季xx",
+						"dingUserId": "15876323800955207",
+						"avatar": ""
+					}, {
+						"userId": 761,
+						"userName": "汪xxx",
+						"dingUserId": "15933406628136740",
+						"avatar": ""
+					}],
+					"opportunity": {
+						"id": "6055afcb58d4460001174fd1",
+						"name": "xx审计"
+					}
+				}, {
+					"projectId": "410ed859038bebfc385bf6b0",
+					"name": "【售后】xx项目",
+					"code": "SLSH19035-1",
+					"type": "售后项目",
+					"state": 1,
+					"status": "售后维护",
+					"startAt": "2021-07-21 00:00:00",
+					"endAt": "2021-08-29 00:00:00",
+					"descr": null,
+					"stages": null,
+					"milestones": null,
+					"securityLevel": null,
+					"pmWeeklySwitch": "N",
+					"pmWeeklyOwner": 0,
+					"ctime": "2021-07-21 17:47:47",
+					"mtime": "2021-07-21 17:47:47",
+					"pm": [{
+						"userId": 146,
+						"userName": "王xx",
+						"dingUserId": "115508544129174136",
+						"avatar": ""
+					}],
+					"technician": [],
+					"member": [{
+						"userId": 1006,
+						"userName": "路姜xxx",
+						"dingUserId": "16141471135807011",
+						"avatar": ""
+					}],
+					"opportunity": {
+						"id": "NO_OPPORTUNITY",
+						"name": "无商机"
+					}
+				}],
+				"count": 265,
+				"currentPage": 1,
+				"pageSize": 10
+			},
+			"message": null
+		}
+	},
+	"getProjectDetail": {
+		"success":{"code":"OK","success":true,"content":{"projectId":"e232f6f16113a18298b05d18","name":"xxx货商城大屏2期改造项目","code":"SLJF21064","type":1,"state":1,"status":3,"statusOther":"","startAt":"2021-08-04 00:00:00","endAt":"2021-09-27 00:00:00","descr":"配货商城大屏早起用我们xx工具交付了，现在客户想要要求用他们架构重新改造，用vue结构","stages":null,"milestones":null,"securityLevel":3,"pmWeeklySwitch":"N","pmWeeklyOwner":0,"ctime":"2021-08-09 11:59:07","mtime":"2021-08-09 11:59:07","pm":[{"userId":26,"userName":"任xx","dingUserId":"28285320220907","avatar":"https://static-legacy.dingtalk.com/media/lADPDiQ3Mmo-tm_NAlTNAmw_620_596.jpg"}],"technician":[{"userId":26,"userName":"任xx","dingUserId":"28285320220907","avatar":"https://static-legacy.dingtalk.com/media/lADPDiQ3Mmo-tm_NAlTNAmw_620_596.jpg"}],"member":[{"userId":26,"userName":"任xx","dingUserId":"28285320220907","avatar":"https://static-legacy.dingtalk.com/media/lADPDiQ3Mmo-tm_NAlTNAmw_620_596.jpg"}],"isPm":false,"opportunity":{"id":"60cc1070c4468b0001d12400","name":"配货商城大屏2期"}},"message":null}
+	},
+	"getAllNoProject": {
+		"success": {
+			"code": "OK",
+			"success": true,
+			"content": [{
+				"id": "093b8d10ac334eef9f22424789d944b9",
+				"name": "xx数据分析项目",
+				"salesman": "xx",
+				"saleDepartment": "华x"
+			}, {
+				"id": "0b1dd33b8e7f4e118a419efb847ce3f8",
+				"name": "xxx专业投资者行为分析",
+				"salesman": "寰xx",
+				"saleDepartment": "大客户销售部"
+			},{
+				"id": "NO_OPPORTUNITY",
+				"name": "无商机"
+			}],
+			"message": null
+		}
+	},
+	"getAllUser": {
+		"success": {"code":"OK","success":true,"content":[{"userId":1,"userName":"钱xx"},{"userId":2,"userName":"兰xx(脆脆)"},{"userId":1266,"userName":"于xx"},{"userId":1267,"userName":"王xx(菜x)"},{"userId":1268,"userName":"徐xx"}],"message":null}
+	}
+}
