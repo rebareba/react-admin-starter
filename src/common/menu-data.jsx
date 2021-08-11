@@ -11,8 +11,8 @@ import {config} from '@utils'
 
 import Home from '@pages/home'
 
-import ProjectManage from '@pages/list/project-manage'
-import ClueDiscovery from '@pages/list/clue-discovery'
+// import ProjectManage from '@pages/list/project-manage'
+// import ClueDiscovery from '@pages/list/clue-discovery'
 
 const {pathPrefix} = config
 
@@ -41,18 +41,18 @@ export default [
     url: '/list',
     icon: <StarOutlined />,
     children: [
-      {
-        name: '项目管理',
-        url: `${pathPrefix}/list/project-manage`,
-        component: ProjectManage,
-        isMenu: true,
-      },
-      {
-        name: '行政监察',
-        url: `${pathPrefix}/list/clue-discovery`,
-        component: ClueDiscovery,
-        isMenu: true,
-      },
+      // {
+      //   name: '项目管理',
+      //   url: `${pathPrefix}/list/project-manage`,
+      //   component: ProjectManage,
+      //   isMenu: true,
+      // },
+      // {
+      //   name: '行政监察',
+      //   url: `${pathPrefix}/list/clue-discovery`,
+      //   component: ClueDiscovery,
+      //   isMenu: true,
+      // },
     ],
   },
 

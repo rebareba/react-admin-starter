@@ -5,8 +5,6 @@ import {config} from '@utils'
 
 import Icon from '@components/icon'
 
-// import '../../assets/sprite-icon'
-// import logo from '../../assets/svg/logo.svg'
 import reactLog from '@assets/image/react.png'
 
 import './home.styl'
